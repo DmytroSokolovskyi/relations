@@ -25,11 +25,11 @@ public class User {
     private List<Product> products = new ArrayList<>();
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(
-            name = "user_cars",
-            joinColumns = {@JoinColumn(name = "users_id")},
-            inverseJoinColumns = {@JoinColumn(name = "cars_id")}
-    )
+//    @JoinTable(
+//            name = "user_cars",
+//            joinColumns = {@JoinColumn(name = "users_id")},
+//            inverseJoinColumns = {@JoinColumn(name = "cars_id")}
+//    )
     private List<Car> cars = new ArrayList<>();
 
     public User(String name) {
